@@ -1,0 +1,212 @@
+<!DOCTYPE html><html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RED MOBILE CRMP</title>
+  <style>
+    :root {
+      --primary: #ff1a1a;
+      --dark: #0a0a0a;
+      --accent: #ff4d4d;
+      --neon-red: #ff003c;
+      --text-light: #f0f0f0;
+    }* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #0a0a0a, #1a1a1a);
+  color: var(--text-light);
+  overflow-x: hidden;
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(circle at 10% 20%, rgba(255, 0, 0, 0.1) 0%, transparent 50%),
+                    radial-gradient(circle at 80% 80%, rgba(255, 0, 0, 0.1) 0%, transparent 60%);
+  z-index: 0;
+}
+
+header {
+  text-align: center;
+  padding: 3rem 1rem 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+.logo-img {
+  width: 120px;
+  height: auto;
+  margin-bottom: 1rem;
+  filter: drop-shadow(0 0 10px var(--neon-red));
+}
+
+h1 {
+  font-size: 3rem;
+  color: var(--neon-red);
+  text-shadow: 0 0 10px var(--neon-red), 0 0 20px var(--neon-red);
+}
+
+.tagline {
+  color: var(--accent);
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+}
+
+.section {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: rgba(255, 0, 60, 0.05);
+  border: 1px solid rgba(255, 0, 60, 0.3);
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(255, 0, 60, 0.2);
+  position: relative;
+  z-index: 1;
+}
+
+h2 {
+  font-size: 2rem;
+  color: var(--accent);
+  margin-bottom: 1rem;
+}
+
+.donate-item, .gallery-item {
+  background: rgba(255, 0, 60, 0.1);
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(255, 0, 60, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.donate-item:hover, .gallery-item:hover {
+  transform: scale(1.03);
+}
+
+.donate-img {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+}
+
+.donate-grid, .gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.btn {
+  background: var(--neon-red);
+  color: white;
+  padding: 0.6rem 1.5rem;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 1rem;
+  transition: background 0.3s ease, transform 0.2s;
+  box-shadow: 0 0 15px rgba(255, 0, 60, 0.5);
+}
+
+.btn:hover {
+  background: #cc0033;
+  transform: scale(1.05);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+input {
+  padding: 0.8rem;
+  border: none;
+  border-radius: 8px;
+  background: #1a1a1a;
+  color: white;
+  font-size: 1rem;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  color: #aaa;
+  font-size: 0.9rem;
+  position: relative;
+  z-index: 1;
+}
+
+.telegram {
+  display: inline-block;
+  margin-top: 1rem;
+  color: var(--accent);
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://i.postimg.cc/LsxNYCyV/IMG-20250710-205123-304.jpg" alt="Логотип" class="logo-img">
+    <h1>RED MOBILE CRMP</h1>
+    <p class="tagline">Самый жаркий ролевой проект на Android</p>
+  </header>  <section class="section">
+    <h2>Почему играть именно у нас?</h2>
+    <p>Уникальная карта с новыми красивыми проработанными интерьерами. Новые системы, к примеру Теплицы, Разные работы, Рп системы. Новые машины, которые могут запасть к вам в сердце. И вы, лучшие игроки!</p>
+  </section>  <section class="section">
+    <h2>Донат</h2>
+    <div class="donate-grid">
+      <div class="donate-item">
+        <img src="https://via.placeholder.com/250x150" alt="Товар 1" class="donate-img">
+        <p>VIP Аккаунт (30 дней)</p>
+        <a href="#" class="btn">Купить</a>
+      </div>
+      <div class="donate-item">
+        <img src="https://via.placeholder.com/250x150" alt="Товар 2" class="donate-img">
+        <p>50.000 игровой валюты</p>
+        <a href="#" class="btn">Купить</a>
+      </div>
+      <div class="donate-item">
+        <img src="https://via.placeholder.com/250x150" alt="Товар 3" class="donate-img">
+        <p>Уникальный скин</p>
+        <a href="#" class="btn">Купить</a>
+      </div>
+    </div>
+  </section>  <section class="section">
+    <h2>Фото-Галерея</h2>
+    <div class="gallery-grid">
+      <div class="gallery-item"><img src="https://via.placeholder.com/250x150" class="donate-img"></div>
+      <div class="gallery-item"><img src="https://via.placeholder.com/250x150" class="donate-img"></div>
+      <div class="gallery-item"><img src="https://via.placeholder.com/250x150" class="donate-img"></div>
+    </div>
+  </section>  <section class="section">
+    <h2>Предрегистрация</h2>
+    <form action="save.php" method="POST">
+      <input type="text" name="nickname" placeholder="Введите ник (Имя_Фамилия)" pattern="[A-Za-z]+_[A-Za-z]+" required>
+      <input type="password" name="password" placeholder="Введите пароль (мин. 8 символов)" minlength="8" required>
+      <button type="submit" class="btn">Отправить заявку</button>
+    </form>
+  </section>  <footer>
+    <p>&copy; 2025 RED MOBILE CRMP. Все права защищены.</p>
+    <a href="https://t.me/redmobilecrmp" class="telegram" target="_blank">Наш Telegram</a>
+  </footer>
+</body>
+</html>
